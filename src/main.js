@@ -6,7 +6,7 @@ import GeoCoder from 'react-native-geocoder';
 // components
 import LocationPin from './components/LocationPin';
 import LocationSearch from './components/LocationSearch';
-// import ClassSelection from './components/ClassSelection';
+import ClassSelection from './components/ClassSelection';
 // import ConfirmationModal from './components/ConfirmationModal';
 
 export default class Main extends React.Component {
@@ -105,9 +105,9 @@ export default class Main extends React.Component {
           onPress={this._onBookingRequest}
         />
 
-        {/*<ClassSelection />
+        <ClassSelection />
 
-        <ConfirmationModal 
+        {/*<ConfirmationModal 
           visible={this.state.confirmationModalVisible}
           onClose={() => this.setState({ confirmationModalVisible: false })}
         /> */}
