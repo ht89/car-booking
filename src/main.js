@@ -4,7 +4,7 @@ import MapView from 'react-native-maps';
 import GeoCoder from 'react-native-geocoder';
 
 // components
-// import LocationPin from './components/LocationPin';
+import LocationPin from './components/LocationPin';
 import LocationSearch from './components/LocationSearch';
 // import ClassSelection from './components/ClassSelection';
 // import ConfirmationModal from './components/ConfirmationModal';
@@ -101,11 +101,11 @@ export default class Main extends React.Component {
           value={this.state.position && (this.state.position.feature || this.state.position.formattedAddress)}
         />
 
-        {/* <LocationPin 
+        <LocationPin 
           onPress={this._onBookingRequest}
         />
 
-        <ClassSelection />
+        {/*<ClassSelection />
 
         <ConfirmationModal 
           visible={this.state.confirmationModalVisible}
