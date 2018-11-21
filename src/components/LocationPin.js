@@ -16,8 +16,8 @@ export default class LocationPin extends React.Component {
         <View style={styles.banner}>
           <Text style={styles.bannerText}>SET PICKUP LOCATION</Text>
 
-          <TouchableOpacity 
-            style={styles.bannerButton} 
+          <TouchableOpacity
+            style={styles.bannerButton}
             onPress={this.props.onPress}>
 
             <Text style={styles.bannerButtonText}>{'>'}</Text>
@@ -43,13 +43,13 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     backgroundColor: '#333',
     padding: 10,
-    shadowColor: '#000',
+    shadowColor: '#000000',
     shadowOffset: {
       width: 0,
-      height: 3,
-      shadowRadius: 5,
-      shadowOpacity: 1.0,
-    }
+      height: 3
+    },
+    shadowRadius: 5,
+    shadowOpacity: 1.0,
   },
   bannerText: {
     alignSelf: 'center',
